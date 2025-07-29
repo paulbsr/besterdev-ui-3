@@ -22,7 +22,7 @@ import 'firebase/auth';
 
 //IMPORT PAGES
 // import PagePeopleScorecard from './pages/PagePeopleScorecard';
-// import PageCyclopediaEdit from './pages/PageCyclopediaEdit';
+import PageCyclopediaEdit from './pages/PageCyclopediaEdit';
 // import PageDHKeyExchange from './pages/PageDHKeyExchange';
 // import PageHowtoManage from './pages/PageHowtoManage';
 import PageCyclopedia from './pages/PageCyclopedia';
@@ -114,7 +114,7 @@ const App = () => {
             {/* <Route path='/dhkeyexchange' element={<PageDHKeyExchange />} /> */}
           </Route>
           {/* <Route path='/taskedit/:task_id' element={<PageTaskEdit />} /> */}
-          {/* <Route path='/cyclopediaedit/:cyclopediaId' element={<PageCyclopediaEdit />} /> */}
+          <Route path='/cyclopediaedit/:cyclopediaId' element={<PageCyclopediaEdit />} />
           {/* <Route path='/howtoedit/:howto_id' element={<PageHowtoEdit />} /> */}
           {searchPhrase && <Route path='/home' element={<PageHome searchPhrase={searchPhrase} />} />}
           {searchPhrase && <Route path='/login' element={<PageLogin searchPhrase={searchPhrase} />} />}
