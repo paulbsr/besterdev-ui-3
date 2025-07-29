@@ -1,0 +1,660 @@
+.Font-Spacer-White {
+    font-family: "Verdana";
+    font-size: x-small;
+    color: #ffffff;
+}
+
+.Font-Verdana-Small-Footer {
+    font-family: "Verdana";
+    font-size: x-small;
+    color: #5c5a5a;
+}
+
+.Font-Verdana-Small {
+    font-family: "Verdana";
+    font-size: small;
+    font-style: italic;
+    color: #DDDDDD;
+}
+
+.Font-Verdana-Medium {
+    font-family: "Verdana";
+    font-size: medium
+}
+
+.Font-Verdana-Medium-Bold {
+    font-family: "Verdana";
+    font-size: medium;
+    font-weight: bold;
+}
+
+.Font-Verdana-Medium-Bold-DBSearch {
+    font-family: "Verdana";
+    font-size: medium;
+    font-weight: bold;
+    color: #336791;
+}
+
+/* .Font-Verdana-Medium-Postgres {
+    font-family: "Verdana";
+    font-size: medium;
+    font-weight: bold;
+    color: #336791;
+} */
+
+.Font-Verdana-Medium-Italic-Rusty {
+    font-family: "Verdana";
+    font-size: medium;
+    font-style: italic;
+    color: #D5441C;
+}
+
+.Font-Verdana-Large {
+    font-family: "Verdana";
+    font-size: large
+}
+
+.Font-Verdana-Small-Rusty {
+    font-family: "Verdana";
+    font-size: small;
+    color: #D5441C
+}
+
+.Font-Verdana-Small-Postgres {
+    font-family: "Verdana";
+    font-size: small;
+    color: #336791
+}
+
+
+.Font-Verdana-Medium-LinkedIn {
+    font-family: "Verdana";
+    font-size: medium;
+    color: #0A66C2
+}
+
+.Font-Verdana-Medium-Howto {
+    font-family: "Verdana";
+    font-size: medium;
+    color: #000000
+}
+
+.Font-Verdana-Large-Howto {
+    font-family: "Verdana";
+    font-size: large;
+    color: #423333
+}
+
+.Font-Verdana-Medium-Howto-Rusty {
+    font-family: "Verdana";
+    font-size: medium;
+    color: #D5441C
+}
+
+.Font-Verdana-Large-Howto-Rusty {
+    font-family: "Verdana";
+    font-size: large;
+    color: #D5441C
+}
+
+.Font-Verdana-Larger-Howto-Rusty {
+    font-family: "Verdana";
+    font-size: larger;
+    color: #D5441C
+}
+
+.Font-Verdana-Larger-Howto-Rusty-Bold {
+    font-family: "Verdana";
+    font-size: larger;
+    color: #D5441C;
+    font-weight: bold;
+}
+
+.Font-Verdana-Larger-Howto-Postgres {
+    font-family: "Verdana";
+    font-size: larger;
+    color: #336791
+}
+
+.Font-Verdana-Large-Howto-Italic-Rusty {
+    font-family: "Verdana";
+    font-size: large;
+    font-style: italic;
+    color: #D5441C;
+}
+
+
+.Font-Verdana-Medium-Indeed {
+    font-family: "Verdana";
+    font-size: medium;
+    color: #003A9B
+}
+
+
+.Font-Verdana-Smaller_Insert {
+    font-family: "Verdana";
+    font-size: smaller;
+    color: #444342
+}
+
+.Font-Verdana-Small_Compliment_Blue {
+    font-family: "Verdana";
+    font-size: small;
+    color: #1CADD5
+}
+
+
+.Font-Verdana-QuickAdd {
+    font-family: "Verdana";
+    font-size: small;
+    color: grey
+}
+
+.Font-Segoe-Small {
+    font-family: "Segoe UI";
+    font-size: Small;
+    color: #336791;
+}
+
+.Font-Segoe-Medium {
+    /* border: 1px solid rgb(233, 228, 228); */
+    /* background-color: #f7f4f3; */
+    font-family: "Segoe UI";
+    font-size: medium;
+    /* font-style: italic; */
+    color: #336791;
+    /* padding: 14px; */
+    /* font-weight: lighter; */
+}
+
+.Font-Segoe-Medium-Howto {
+    font-family: "Segoe UI";
+    font-size: medium;
+    color: #2e2828
+}
+
+.Font-Segoe-Medium-Howto-CV {
+    font-family: "Segoe UI";
+    font-size: small;
+    color: #8f9192;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.Font-Segoe-Medium-Howto-Desc {
+    font-family: "Segoe UI";
+    font-size: medium;
+    color: #333030;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.Font-Segoe-Large-Howto {
+    font-family: "Segoe UI";
+    font-size: large;
+    color: #0c0c0c;
+    cursor: pointer;
+}
+
+.Font-Segoe-Small-Howto {
+    font-family: "Segoe UI";
+    font-size: small;
+    color: #0c0c0c;
+    cursor: pointer;
+}
+
+.Font-Segoe-Large-FP {
+    font-family: "Segoe UI";
+    font-size: large;
+    color: #D5441C;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Font-Segoe-XLarge-FP {
+    font-family: "Segoe UI";
+    font-size: x-large;
+    color: #D5441C;
+    cursor: pointer;
+    font-weight: n;
+}
+
+.Table6 th {
+    background-color: #f7f4f3;
+    padding: 4px;
+    font-family: "Verdana";
+    font-size: small;
+    font-style: italic;
+}
+
+.Table6 td {
+    font-family: "Segoe UI";
+    font-size: small;
+    border: 1px solid rgb(233, 228, 228);
+    padding: 4px;
+    /* min-width: 50%; */
+}
+
+.Table4 th {
+    background-color: #f7f4f3;
+    padding: 4px;
+    font-family: "Calibri";
+    font-size: xx-large;
+    border-radius: 8px;
+    border: 1px solid rgb(233, 228, 228);
+}
+
+.Table4 td {
+    border: 1px solid rgb(233, 228, 228);
+    padding: 4px;
+    font-family: "Calibri";
+    font-size: xx-large;
+    min-width: 50%;
+    border-radius: 8px;
+}
+
+.TableCVhover {
+    border: 1px solid rgb(233, 228, 228);
+    background-color: #b3360d;
+    padding: 10px;
+    font-family: "Segoe UI";
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.TableCV th {
+    border: 1px solid rgb(233, 228, 228);
+    background-color: #f7f4f3;
+    padding: 10px;
+    font-family: "Calibri";
+    font-size: 45px;
+    border-radius: 8px;
+}
+
+.TableHowto th {
+    border: 1px solid rgb(233, 228, 228);
+    background-color: #f7f4f3;
+    padding: 10px;
+    font-family: "Calibri";
+    font-size: 35px;
+    border-radius: 8px;
+}
+
+.Table-home-left{
+    background-color: #ffffff;
+    font-family: "Verdana";
+    font-size: large;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+}
+
+.Table-home-left-text{
+    background-color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: smaller;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+}
+
+.Table-home-right-text{
+    background-color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: smaller;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.Table-home-left-heading{
+    background-color: #ffffff;
+    /* font-family: "Verdana"; */
+    font-family: "Segoe UI";
+    font-size: large;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    color: #D5441C;
+}
+
+.Table-home-right-heading{
+    background-color: #ffffff;
+    /* font-family: "Verdana"; */
+    font-family: "Segoe UI";
+    font-size: large;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    color: #D5441C;
+}
+
+.Table-home-centre{
+    background-color: #ffffff;
+    padding: 4px;
+    font-family: "Segoe UI";
+    font-size: medium;
+    text-align: justify;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.Table-home-right{
+    background-color: #ffffff;
+    font-family: "Verdana";
+    font-size: large;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.Table-home-right-cats{
+    background-color: #ffffff;
+    padding: 4px;
+    font-family: "Verdana";
+    font-size: small ;
+    text-align: justify;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+
+.Table-howtoedit{
+    font-family: "Calibri";
+    font-size: larger;
+    color: #D5441C;
+    background-color: #f7f4f3;
+    border-radius: 4px;
+    border: 1px solid #336791;
+    font-weight: normal;
+}
+
+.asmshover:hover {
+    font-family: "Verdana";
+    font-size: small;
+    color: #D5441C;
+    /* background-color: #f7f4f3; */
+    background-color: #000000;
+    border-radius: 4px;
+    border: 1px solid #913333;
+    padding: 4px;
+    /* font-style: italic; */
+    /* font-weight: normal; */
+}
+
+.fphover:hover {
+    font-family: "Verdana";
+    font-size: small;
+    color: #D5441C;
+    background-color: #f7f4f3;
+    border-radius: 3px;
+    border: 1px solid #336791;
+    cursor: 'pointer';
+}
+
+.fphover2:hover {
+    font-family: "Segoe UI";
+    font-size: medium;
+    color: #D5441C;
+    background-color: #f7f4f3;
+    border-radius: 3px;
+    border: 1px solid #336791;
+    cursor: 'pointer';
+}
+
+.dbsearchhover:hover {
+    /* font-family: "Verdana"; */
+    font-family: "Segoe UI";
+    /* font-size: small; */
+    font-size: medium;
+    color: #336791;
+    background-color: #f7f4f3;
+    border-radius: 3px;
+    border: 1px solid #336791;
+    cursor: 'pointer';
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+}
+
+.dbsearchhoverbanner:hover {
+    font-family: "Segoe UI";
+    font-size: medium;
+    color: #336791;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    /* border: 1px solid #336791; */
+    border: 1px solid #000000;
+    cursor: 'pointer';
+}
+
+.searchhover:hover {
+    cursor: 'pointer';
+    font-family: "Verdana";
+    font-size: medium;
+    color: #D5441C;
+    background-color: #f7f4f3;
+    border-radius: 3px;
+    border: 1px solid #336791;
+}
+
+.mycvhover:hover {
+    font-family: "Segoe UI";
+    font-size: large;
+    font-style: italic;
+    color: #000000;
+    background-color: #f7f4f3;
+    border-radius: 4px;
+    border: 1px solid #336791;
+    padding-right: 5px;
+}
+
+.steprecordhover:hover {
+    font-family: "Segoe UI";
+    font-size: large;
+    color: #D5441C;
+    background-color: #f7f4f3;
+    border-radius: 4px;
+    border: 1px solid #336791;
+    padding-right: 5px;
+}
+
+.banner-light {
+    background-color: #f7f4f3;
+    padding: 1px;
+    text-align: right;
+  }
+
+.banner-light-left {
+    background-color: #f7f4f3;
+    padding: 1px;
+    text-align: left;
+  }
+
+.banner-white {
+    background-color: #ffffff;
+    padding: 1px;
+    text-align: left;
+  }
+
+ .gradient-line-linkedin {
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(to right, #0A66C2, #f5f9fa);
+  }
+
+.gradient-line {
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(to right, #336791, #f5f9fa);
+  }
+
+  .gradient-line-black {
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(to right, #000000, #f5f9fa);
+  }
+ 
+  .gradient-line-rusty {
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(to right,  #D5441C, #f5f9fa);
+  }
+
+  .gradient-line-green {
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(to right,  #336791, #f5f9fa);
+  }
+
+  .gradient-line-thin {
+    width: 100%;
+    height: 1px; 
+    background: linear-gradient(to right, #cfcbd1, #ffffff);
+  }
+
+.tooltip {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+/* Tooltip arrow */
+.tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+  }
+  
+  /* Tooltip content */
+  .tooltip-inner {
+    background-color: black;
+    color: white;
+    padding: 8px;
+  }
+    
+  .footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f7f4f3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .ticker {
+    color: #C0C0C0;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: "Verdana";
+    font-size: small;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+}
+
+.marquee-container {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  
+  .marquee {
+    width: 100%;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-right: 19px; /* Adjust spacing between texts */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateY(600%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .Table8 td {
+    border: 1px solid rgb(233, 228, 228);
+    color: #336791;
+    padding: 5px;
+    font-family: "Verdana";
+    font-size: 13px;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
+
+.Table8 th {
+    color: #336791;
+    padding: 5px;
+    font-family: "Verdana";
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #336791;
+}
+
+.Table8hover td:hover {
+    /* color: #336791; background-color: #f7f4f3; */
+    color: #336791;
+    background-color: #fdf8f6;
+    /* border: 1px solid rgb(182, 172, 172); */
+    border: 1px solid #336791;
+    border-radius: 3px;
+}
+
+.overview {
+    border-collapse: collapse;
+    border: 1px solid rgb(233, 228, 228);
+    width: 100%;
+}
+
+.overview th {
+    background-color: #e1ebf8;
+    padding: 2px;
+    font-family: "Segoe UI";
+    font-size: small;
+}
+
+.overview td {
+    border: 1px solid rgb(233, 228, 228);
+    padding: 5px;
+    font-family: "Segoe UI";
+    font-size: medium;
+}
+
+.overview-box {
+    width: 25%;
+    text-align: center;
+    color: rgb(51,103,145);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.fit-eleven {
+    width: 9%;
+    min-width: 135px;
+    font-size: large;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.start-color {background-color: rgb(192, 192, 192, .50);}
+.wip-color {background-color: rgb(15, 158, 213, .25);}
+.done-color {background-color: rgb(0, 180, 0, .25);}
+.problem-color {background-color: rgb(190, 0, 0, .25);}
+.fill {width: 99%;}
+
