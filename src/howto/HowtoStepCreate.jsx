@@ -1,14 +1,14 @@
-import React, { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import axios from 'axios';
 import '../Fonts.css';
 import dayjs from "dayjs";
 import utc from 'dayjs/plugin/utc';
 import spacer2 from '../graphix/besterdev_spacer_white_half.png';
-import { GiHummingbird, GiFootsteps } from "react-icons/gi";
-import 'react-tooltip/dist/react-tooltip.css';
+import { GiHummingbird } from "react-icons/gi";
 import { Tooltip } from 'react-tooltip';
 import { toast } from 'react-toastify';
-import { IoFootstepsSharp, IoFootstepsOutline } from "react-icons/io5";
+import { IoFootstepsOutline } from "react-icons/io5";
+import 'react-tooltip/dist/react-tooltip.css';
 dayjs.extend(utc);
 
 

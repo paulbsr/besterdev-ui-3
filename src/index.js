@@ -28,7 +28,7 @@ import PageHowtoManage from './pages/PageHowtoManage';
 import PageCyclopedia from './pages/PageCyclopedia';
 // import PageTaskManage from './pages/PageTaskManage';
 import PageHowtoEdit from './pages/PageHowtoEdit';
-// import PageResources from './pages/PageResources';
+import PageResources from './pages/PageResources';
 // import PageTaskEdit from './pages/PageTaskEdit';
 // import PageSwagger from './pages/PageSwagger';
 // import PageManage from './pages/PageManage';
@@ -107,7 +107,7 @@ const App = () => {
             <Route path='/howtomanage' element={<PageHowtoManage />} />
             {/* <Route path='/hunt' element={<PageSearch />} /> */}
             <Route path='/cyclopediamanage' element={<PageCyclopedia />} />
-            {/* <Route path='/webresourcemanage' element={<PageResources />} /> */}
+            <Route path='/webresourcemanage' element={<PageResources />} />
             {/* <Route path='/peoplescorecard' element={<PagePeopleScorecard />} /> */}
             {/* <Route path='/taskmanage' element={<PageTaskManage />} /> */}
             {/* <Route path='/mycv' element={<PageMyCV />} /> */}

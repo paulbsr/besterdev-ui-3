@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ImageUploading from 'react-images-uploading';
 import axios from 'axios';
 import { toast } from 'react-toastify';

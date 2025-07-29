@@ -2,9 +2,7 @@ import DBSearchComponentBanner from "../dbsearch/DBSearchComponentBanner";
 import { useCyclopediaApi } from '../cyclopedia/CyclopediaAPIProvider';
 import WebSocketComponent from "../websockets/WebSocketComponent";
 import { useWebsiteApi } from '../websites/WebSiteAPIProvider';
-import WebSocketTrigger from "../websockets/websockettrigger";
 import { GiHummingbird, GiSpiderWeb } from "react-icons/gi";
-import WebSocketEvent from '../websockets/WebSocketEvent';
 import { GiGiftOfKnowledge } from "react-icons/gi";
 import BearerToken from "../oauth2.0/BearerToken";
 import { TbBrandSocketIo } from "react-icons/tb";
@@ -12,7 +10,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import { TbBrandOauth } from "react-icons/tb";
 import { BsSearch } from "react-icons/bs";
 import DatePicker from "react-datepicker";
-import React, { useState } from "react";
+import { useState } from "react";
 import { MdTask } from "react-icons/md";
 import { toast } from 'react-toastify';
 import axios from 'axios';
@@ -108,38 +106,43 @@ export default function CombinedCreateFP() {
   };
 
 
-  const handleSubmitTask = async (event) => {
-    if (
-      tasktargetdate !== null
-    ) {
-      event.preventDefault();
-      var newtask = {
-        taskname: taskname,
-        taskrequirement: taskrequirement,
-        taskowner: taskowner,
-        tasktargetdate: tasktargetdate,
-        taskcreatedate: taskcreatedate,
-        taskstatus: taskstatus,
-        asms: asms,
-        projecthandle: projecthandle,
-        tasknextstep: tasknextstep,
-      };
-      try {
-        const response = await axios.post
-          (`https://besterdev-api-13a0246c9cf2.herokuapp.com/api/v1/tasks/create`, newtask);
-        if (response.status === 200) {
-          { toast.success(`Task added.`) }
-        }
-        else { toast.error('Task not added'); }
-      }
-      catch (err) {
-        console.log(err);
-      }
-    } else {
-      event.preventDefault();
+const handleSubmitTask = async (event) => {
+  if (tasktargetdate !== null) {
+    event.preventDefault();
 
+    const newtask = {
+      taskname,
+      taskrequirement,
+      taskowner,
+      tasktargetdate,
+      taskcreatedate,
+      taskstatus,
+      asms,
+      projecthandle,
+      tasknextstep,
+    };
+
+    try {
+      const response = await axios.post(
+        `https://besterdev-api-13a0246c9cf2.herokuapp.com/api/v1/tasks/create`,
+        newtask
+      );
+
+      if (response.status === 200) {
+        toast.success(`Task added.`);
+      } else {
+        toast.error('Task not added');
+      }
+
+    } catch (err) {
+      console.log(err);
     }
-  };
+
+  } else {
+    event.preventDefault();
+  }
+};
+
 
   return (
 

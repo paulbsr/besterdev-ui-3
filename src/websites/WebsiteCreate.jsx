@@ -19,8 +19,6 @@ export default function WebSiteCreate(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    {
       var newRecord =
       {
         'websiteName': website_name,
@@ -28,7 +26,6 @@ export default function WebSiteCreate(props) {
         'websiteUrl': website_url,
         'websiteCat': website_cat,
       }
-
       {
         const response = await axios.post(`https://besterdev-api-13a0246c9cf2.herokuapp.com/api/v1/websites/create`, newRecord);
         if (response.status === 200) {
@@ -39,7 +36,6 @@ export default function WebSiteCreate(props) {
           toast.error('Nee')
         }
       }
-    }
   }
 
   return (

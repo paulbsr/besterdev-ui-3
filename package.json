@@ -28,6 +28,10 @@
     "sockjs-client": "^1.6.1",
     "web-vitals": "^2.1.4"
   },
+  "resolutions": {
+  "react-datepicker/source-map-loader": "0.0.0"
+},
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
