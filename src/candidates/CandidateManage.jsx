@@ -7,8 +7,8 @@ import axios from 'axios'
 import {FaPen, FaCheck, FaRegTrashAlt} from 'react-icons/fa';
 import {PiArrowCounterClockwiseBold} from 'react-icons/pi';
 import { MdManageAccounts } from "react-icons/md";
-import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+// import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";   HIERDIE IS DIE VOCKEN PROBLEEM!!!!!!!!
+// import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";    HIERDIE IS DIE VOCKEN PROBLEEM!!!!!!!!
 import dayjs from "dayjs";
 import utc from 'dayjs/plugin/utc';
 import CandidateCreate from './CandidateCreate';
@@ -195,17 +195,17 @@ export default function CandidateManage() {
                       <td className="asmshover Table6 td">{row.id === editing ? (<input style={{ height: '22.5px', width: '240px', border: '1.25px solid #336791', borderRadius: '4px', padding: 0, paddingLeft: '5px' }} value={email} onChange={(e) => setemail(e.target.value)} className='cr_edit_inputfield_disc' />) : (<a href={'mailto: ${row.email}'} target="_blank" rel="noreferrer">{row.email}</a>)}</td>
                       <td className="asmshover Table6 td">{row.id === editing ? (<input style={{ height: '22.5px', width: '120px', border: '1.25px solid #336791', borderRadius: '4px', padding: 0, paddingLeft: '5px' }} value={mobile} onChange={(e) => setmobile(e.target.value)} />) : (row.mobile)}</td> 
                       <td className="asmshover Table6 td">{row.id === editing ? 
-                      (
-                      <LocalizationProvider dateAdapter={AdapterDayjs} dateLibInstance={dayjs.utc}>
-                        <DatePicker
-                          id="cr_date"
-                          format="YYYY.M.D"
-                          value={crDate}
-                          selected={dob}
-                          onChange={handleDateChange}
-                          dateFormat="YYYY.M.D"
-                          sx={{ height: '22.5px', '& .MuiInputBase-root': { height: '100%', fontSize: '13.5px', width: '90px' }, '& .MuiSvgIcon-root': { height: '20px' } }}/>
-                      </LocalizationProvider>
+                      ( <>xxx</>
+                      // <LocalizationProvider dateAdapter={AdapterDayjs} dateLibInstance={dayjs.utc}>
+                      //   <DatePicker
+                      //     id="cr_date"
+                      //     format="YYYY.M.D"
+                      //     value={crDate}
+                      //     selected={dob}
+                      //     onChange={handleDateChange}
+                      //     dateFormat="YYYY.M.D"
+                      //     sx={{ height: '22.5px', '& .MuiInputBase-root': { height: '100%', fontSize: '13.5px', width: '90px' }, '& .MuiSvgIcon-root': { height: '20px' } }}/>
+                      // </LocalizationProvider>
                       )
                       : 
                       new Date(row.dob).toLocaleDateString("en-CA")}
