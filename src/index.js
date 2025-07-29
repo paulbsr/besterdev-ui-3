@@ -21,7 +21,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 //IMPORT PAGES
-// import PagePeopleScorecard from './pages/PagePeopleScorecard';
+import PagePeopleScorecard from './pages/PagePeopleScorecard';
 import PageCyclopediaEdit from './pages/PageCyclopediaEdit';
 // import PageDHKeyExchange from './pages/PageDHKeyExchange';
 import PageHowtoManage from './pages/PageHowtoManage';
@@ -108,7 +108,7 @@ const App = () => {
             {/* <Route path='/hunt' element={<PageSearch />} /> */}
             <Route path='/cyclopediamanage' element={<PageCyclopedia />} />
             <Route path='/webresourcemanage' element={<PageResources />} />
-            {/* <Route path='/peoplescorecard' element={<PagePeopleScorecard />} /> */}
+            <Route path='/peoplescorecard' element={<PagePeopleScorecard />} />
             {/* <Route path='/taskmanage' element={<PageTaskManage />} /> */}
             {/* <Route path='/mycv' element={<PageMyCV />} /> */}
             {/* <Route path='/dhkeyexchange' element={<PageDHKeyExchange />} /> */}
