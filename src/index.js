@@ -24,10 +24,10 @@ import 'firebase/auth';
 // import PagePeopleScorecard from './pages/PagePeopleScorecard';
 import PageCyclopediaEdit from './pages/PageCyclopediaEdit';
 // import PageDHKeyExchange from './pages/PageDHKeyExchange';
-// import PageHowtoManage from './pages/PageHowtoManage';
+import PageHowtoManage from './pages/PageHowtoManage';
 import PageCyclopedia from './pages/PageCyclopedia';
 // import PageTaskManage from './pages/PageTaskManage';
-// import PageHowtoEdit from './pages/PageHowtoEdit';
+import PageHowtoEdit from './pages/PageHowtoEdit';
 // import PageResources from './pages/PageResources';
 // import PageTaskEdit from './pages/PageTaskEdit';
 // import PageSwagger from './pages/PageSwagger';
@@ -46,7 +46,7 @@ import './Fonts.css';
 import { BreakingNewsAPIProvider } from './breakingnews/BreakingNewsAPIProvider';
 import { CyclopediaAPIProvider } from './cyclopedia/CyclopediaAPIProvider';
 import { WebSiteAPIProvider } from './websites/WebSiteAPIProvider';
-// import { HowtoAPIProvider } from './howto/HowtoAPIProvider';
+import { HowtoAPIProvider } from './howto/HowtoAPIProvider';
 
 // import 'react-tooltip/dist/react-tooltip.css';
 // import ReactDOM from 'react-dom';
@@ -104,7 +104,7 @@ const App = () => {
             {/* <Route path='/screen' element={<PageSearch />} /> */}
             {/* <Route path='/candidatemanage' element={<PageManage />} /> */}
             {/* <Route path='/logout' element={<PageLogout />} /> */}
-            {/* <Route path='/howtomanage' element={<PageHowtoManage />} /> */}
+            <Route path='/howtomanage' element={<PageHowtoManage />} />
             {/* <Route path='/hunt' element={<PageSearch />} /> */}
             <Route path='/cyclopediamanage' element={<PageCyclopedia />} />
             {/* <Route path='/webresourcemanage' element={<PageResources />} /> */}
@@ -115,7 +115,7 @@ const App = () => {
           </Route>
           {/* <Route path='/taskedit/:task_id' element={<PageTaskEdit />} /> */}
           <Route path='/cyclopediaedit/:cyclopediaId' element={<PageCyclopediaEdit />} />
-          {/* <Route path='/howtoedit/:howto_id' element={<PageHowtoEdit />} /> */}
+          <Route path='/howtoedit/:howto_id' element={<PageHowtoEdit />} />
           {searchPhrase && <Route path='/home' element={<PageHome searchPhrase={searchPhrase} />} />}
           {searchPhrase && <Route path='/login' element={<PageLogin searchPhrase={searchPhrase} />} />}
           {/* <Route path='/swagger' element={<PageSwagger />} /> */}
@@ -148,13 +148,13 @@ const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BreakingNewsAPIProvider>
-      {/* <HowtoAPIProvider> */}
+      <HowtoAPIProvider>
         <CyclopediaAPIProvider>
           <WebSiteAPIProvider>
             <App />
           </WebSiteAPIProvider>
         </CyclopediaAPIProvider>
-      {/* </HowtoAPIProvider> */}
+      </HowtoAPIProvider>
     </BreakingNewsAPIProvider>
   </React.StrictMode>
 );

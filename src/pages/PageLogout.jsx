@@ -11,7 +11,7 @@ import Footer from '../Footer';
 import 'firebase/auth';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import 'react-dropdown/style.css';
+// import 'react-dropdown/style.css';
 import 'react-tooltip/dist/react-tooltip.css';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Fonts.css';

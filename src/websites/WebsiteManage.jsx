@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../Fonts.css';
-import 'react-dropdown/style.css';
+// import 'react-dropdown/style.css';
 import axios from 'axios'
 import { FaPen, FaCheck, FaRegTrashAlt } from 'react-icons/fa';
 import { TbWorldWww } from "react-icons/tb";
