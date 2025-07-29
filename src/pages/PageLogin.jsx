@@ -5,7 +5,7 @@ import BannerWhite from '../banners/BannerWhite';
 import GradientLine from '../gradientlines/GradientLine';
 import firebase from 'firebase/compat/app';
 import spacer from '../graphix/besterdev_spacer_white.png';
-import { Flip, ToastContainer, toast, Zoom } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'firebase/auth';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';

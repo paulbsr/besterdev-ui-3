@@ -43,9 +43,9 @@ import './index.css';
 import './Fonts.css';
 
 //IMPORT API PROVIDERS
-// import { BreakingNewsAPIProvider } from './breakingnews/BreakingNewsAPIProvider';
+import { BreakingNewsAPIProvider } from './breakingnews/BreakingNewsAPIProvider';
 import { CyclopediaAPIProvider } from './cyclopedia/CyclopediaAPIProvider';
-// import { WebSiteAPIProvider } from './websites/WebSiteAPIProvider';
+import { WebSiteAPIProvider } from './websites/WebSiteAPIProvider';
 // import { HowtoAPIProvider } from './howto/HowtoAPIProvider';
 
 // import 'react-tooltip/dist/react-tooltip.css';
@@ -72,14 +72,10 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
-// const username = 'besterdev-ui';
-// const password = 'TZXWF498UR5PGQLH6E3CMBDNSYJAKV72';
-// const basicAuth = Buffer.from(`${username}:${password}`).toString('base64');
 
 const App = () => {
   const [searchPhrase, setSearchPhrase] = useState();
   const [checkForRecords, setCheckForRecords] = useState(true);
-
   const username = 'besterdev-ui';
   const password = 'TZXWF498UR5PGQLH6E3CMBDNSYJAKV72';
   const basicAuth = Buffer.from(`${username}:${password}`).toString('base64');
@@ -87,25 +83,6 @@ const App = () => {
 
   useEffect(() => {
     axios('https://besterdev-api-13a0246c9cf2.herokuapp.com/api/v1/searchphrase')
-      //   axios('http://localhost:8000/api/v1/searchphrase', 
-      //   {
-      //     headers: {'Authorization': `Basic ${basicAuth}`, 'Content-Type': 'application/json'
-      //     // auth: {username: 'besterdev-ui', password: 'TZXWF498UR5PGQLH6E3CMBDNSYJAKV72'},
-      //     // headers: {'Content-Type': 'application/json', 'Authorization': 'Basic ' + btoa('${basicAuth}', 'mode': 'cors') // Manually set Basic Auth header
-
-      //   },
-      //   withCredentials: true, // This allows credentials to be sent (cookies, etc.)
-      //   }
-      // )
-
-      // axios.get('http://localhost:8000/api/v1/searchphrase', {
-      //   headers: {
-      //     'Authorization': `Basic ${basicAuth}`,
-      //     'Content-Type': 'application/json',
-      //   },
-      //   withCredentials: true, // For sending cookies or session information
-      // })
-
       .then((response) => {
         const searchPhraseValue = response.data[0].searchphrase;
         setSearchPhrase(searchPhraseValue);
@@ -170,9 +147,15 @@ export const auth = getAuth(app);
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CyclopediaAPIProvider>
-      <App />
-    </CyclopediaAPIProvider>
+    <BreakingNewsAPIProvider>
+      {/* <HowtoAPIProvider> */}
+        <CyclopediaAPIProvider>
+          <WebSiteAPIProvider>
+            <App />
+          </WebSiteAPIProvider>
+        </CyclopediaAPIProvider>
+      {/* </HowtoAPIProvider> */}
+    </BreakingNewsAPIProvider>
   </React.StrictMode>
 );
 
