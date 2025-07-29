@@ -31,9 +31,9 @@ import PageHowtoEdit from './pages/PageHowtoEdit';
 import PageResources from './pages/PageResources';
 // import PageTaskEdit from './pages/PageTaskEdit';
 // import PageSwagger from './pages/PageSwagger';
-import PageManage from './pages/PageManage';
+// import PageManage from './pages/PageManage';
 // import PageLogout from './pages/PageLogout';
-import PageSearch from './pages/PageSearch';
+// import PageSearch from './pages/PageSearch';
 // import PageMyCV from './pages/PageMyCV';
 import PageLogin from './pages/PageLogin';
 import PageHome from './pages/PageHome';
@@ -100,10 +100,10 @@ const App = () => {
       <Router>
         <Routes>
           <Route element={<PrivateRoutes />}>
-            <Route path='/search' element={<PageSearch />} />
-            <Route path='/screen' element={<PageSearch />} />
-            <Route path='/hunt' element={<PageSearch />} />
-            <Route path='/candidatemanage' element={<PageManage />} />
+            {/* <Route path='/search' element={<PageSearch />} /> */}
+            {/* <Route path='/screen' element={<PageSearch />} /> */}
+            {/* <Route path='/hunt' element={<PageSearch />} /> */}
+            {/* <Route path='/candidatemanage' element={<PageManage />} /> */}
             {/* <Route path='/logout' element={<PageLogout />} /> */}
             <Route path='/howtomanage' element={<PageHowtoManage />} />
             <Route path='/cyclopediamanage' element={<PageCyclopedia />} />
