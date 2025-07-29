@@ -1,48 +1,56 @@
-
+//IMPORT REACT
 import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom';
-// import { BreakingNewsAPIProvider } from './breakingnews/BreakingNewsAPIProvider';
-// import { CyclopediaAPIProvider } from './cyclopedia/CyclopediaAPIProvider';
-// import { WebSiteAPIProvider } from './websites/WebSiteAPIProvider';
+import { createRoot } from 'react-dom/client';
+import React, { useState, useEffect } from 'react';
+
+//IMPORT RANDOM
+import axios from 'axios';
+import { Buffer } from 'buffer';
+
+//IMPORT USERCONTEXT
+import { useUserContext } from './UserContext';
+import { UserProvider } from './UserContext';
+
+//IMPORT FIREBASE
+import { initializeApp } from "firebase/app";
+import firebase from 'firebase/compat/app';
+import { getAuth } from "firebase/auth";
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+import 'firebase/firestore';
+import 'firebase/auth';
+
+//IMPORT PAGES
 // import PagePeopleScorecard from './pages/PagePeopleScorecard';
-// import { HowtoAPIProvider } from './howto/HowtoAPIProvider';
 // import PageCyclopediaEdit from './pages/PageCyclopediaEdit';
 // import PageDHKeyExchange from './pages/PageDHKeyExchange';
 // import PageHowtoManage from './pages/PageHowtoManage';
-// import PageCyclopedia from './pages/PageCyclopedia';
+import PageCyclopedia from './pages/PageCyclopedia';
 // import PageTaskManage from './pages/PageTaskManage';
-import React, { useState, useEffect } from 'react';
 // import PageHowtoEdit from './pages/PageHowtoEdit';
 // import PageResources from './pages/PageResources';
 // import PageTaskEdit from './pages/PageTaskEdit';
-import { useUserContext } from './UserContext';
 // import PageSwagger from './pages/PageSwagger';
-// import 'react-tooltip/dist/react-tooltip.css';
-import { initializeApp } from "firebase/app";
-import { UserProvider } from './UserContext';
 // import PageManage from './pages/PageManage';
 // import PageLogout from './pages/PageLogout';
 // import PageSearch from './pages/PageSearch';
-import firebase from 'firebase/compat/app';
+// import PageMyCV from './pages/PageMyCV';
 import PageLogin from './pages/PageLogin';
 import PageHome from './pages/PageHome';
-import { getAuth } from "firebase/auth";
-// import PageMyCV from './pages/PageMyCV';
-import 'firebase/compat/firestore';
-// import ReactDOM from 'react-dom';
-import { createRoot } from 'react-dom/client';
-// import App from './App';
-import { Buffer } from 'buffer';
-// import ReactGA from 'react-ga';
-import 'firebase/compat/auth';
-import 'firebase/firestore';
-import axios from 'axios';
-import 'firebase/auth';
+
+//IMPORT CSS
 import './index.css';
 import './Fonts.css';
 
+//IMPORT API PROVIDERS
+// import { BreakingNewsAPIProvider } from './breakingnews/BreakingNewsAPIProvider';
+import { CyclopediaAPIProvider } from './cyclopedia/CyclopediaAPIProvider';
+// import { WebSiteAPIProvider } from './websites/WebSiteAPIProvider';
+// import { HowtoAPIProvider } from './howto/HowtoAPIProvider';
 
-// const TRACKING_ID = "G-FCGGY1NE36";
-// ReactGA.initialize(TRACKING_ID);
+// import 'react-tooltip/dist/react-tooltip.css';
+// import ReactDOM from 'react-dom';
+// import App from './App';
 
 const PrivateRoutes = () => {
   const { loggedInUserEmail } = useUserContext();
@@ -121,7 +129,7 @@ const App = () => {
             {/* <Route path='/logout' element={<PageLogout />} /> */}
             {/* <Route path='/howtomanage' element={<PageHowtoManage />} /> */}
             {/* <Route path='/hunt' element={<PageSearch />} /> */}
-            {/* <Route path='/cyclopediamanage' element={<PageCyclopedia />} /> */}
+            <Route path='/cyclopediamanage' element={<PageCyclopedia />} />
             {/* <Route path='/webresourcemanage' element={<PageResources />} /> */}
             {/* <Route path='/peoplescorecard' element={<PagePeopleScorecard />} /> */}
             {/* <Route path='/taskmanage' element={<PageTaskManage />} /> */}
@@ -162,7 +170,9 @@ export const auth = getAuth(app);
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CyclopediaAPIProvider>
+      <App />
+    </CyclopediaAPIProvider>
   </React.StrictMode>
 );
 
